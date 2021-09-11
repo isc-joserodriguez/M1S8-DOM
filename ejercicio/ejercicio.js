@@ -9,6 +9,7 @@
 
 const InputElementRef = document.getElementById('input_message')
 const BotonElementRef = document.getElementById('btn_agregar')
+const BotonElElementRef = document.getElementById('btn_eliminar')
 const ListaRef = document.getElementById('Lista')
 
 BotonElementRef.addEventListener('click', function() {
@@ -21,6 +22,10 @@ BotonElementRef.addEventListener('click', function() {
     ListaRef.appendChild(listItem)
 })
 
+BotonElElementRef.addEventListener('click', function() {
+    localStorage.removeItem('Mensaje')
+})
+
 window.onload = () => {
     const mensaje = localStorage.getItem('Mensaje')
 
@@ -29,3 +34,15 @@ window.onload = () => {
 
     ListaRef.appendChild(listItem)
 }
+
+//Obtener primer hijo
+document.getElementById('Lista').firstChild
+
+//Obtener el hijo n
+document.getElementById('Lista').children[0]
+
+/* 
+Eliminar
+
+referenciaAlElemento.remove();
+ */
