@@ -18,10 +18,23 @@ divisor.innerHTML = divisor.innerHTML + `
 
 const boton = document.getElementById("boton");
 
-boton.addEventListener('click',  function (evento) {
+boton.addEventListener('click', function(evento) {
     console.log('hola, di click');
 });
 
 function presionar() {
     console.log('hola, di click, HTML');
+}
+
+const crearArregloStorage = (arreglo) => {
+    localStorage.setItem('numeros', JSON.stringify(arreglo));
+}
+
+const eliminarArregloStorage = (indice) => {
+    let numeros = localStorage.getItem('numeros');
+    if (numeros) {
+        let tempArray = JSON.parse(numeros);
+        tempArray.splice(indice, 1)
+        localStorage.setItem('numeros', JSON.stringify(tempArray));
+    }
 }

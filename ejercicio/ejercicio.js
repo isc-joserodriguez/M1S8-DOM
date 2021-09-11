@@ -2,6 +2,10 @@
  * ? 1. Referencia al Boton y a nuestro input
  * ? 2. Agregar el evento
  * ? 3. Leer el valor de nuestro input
+ *      3.1 - hacer referencia al input
+ *      3.2 - Obtener el valor de la referencia
+ *      3.3 - guardar el valor en una variable
+ *      3.4 - usar la variable 
  * ? 4. Guardar el valor en el localStorage
  * ? 5. Agregarlo en el documento html
  * ? 6. Obtener los datos de nuestro localStorage
