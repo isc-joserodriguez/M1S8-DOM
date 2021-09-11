@@ -1,0 +1,19 @@
+.colorRojo {
+    color: red;
+}
+
+.colorAmarillo {
+    color: yellow;
+}
+
+.negritas {
+    font-weight: bolder;
+}
+
+.mayusculas {
+    text-transform: uppercase;
+}
+
+.completada {
+    text-decoration: line-through;
+}

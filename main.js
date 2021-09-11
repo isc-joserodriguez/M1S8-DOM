@@ -15,3 +15,13 @@ divisor.innerHTML = `
 divisor.innerHTML = divisor.innerHTML + `
 <a href="#">Hola</a>
 `
+
+const boton = document.getElementById("boton");
+
+boton.addEventListener('click',  function (evento) {
+    console.log('hola, di click');
+});
+
+function presionar() {
+    console.log('hola, di click, HTML');
+}
